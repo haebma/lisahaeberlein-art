@@ -1,0 +1,231 @@
+/* general */
+html{
+    font-size: 100%;
+} /* what's the use?? */
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+    color: #0582ba; /*#2A357D*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#logo {
+    width: 10%;
+}
+
+nav, footer {
+    background-color: #0582ba;
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 10px;
+}
+.menu {
+    list-style-type: none; /* Remove default bullets */
+    /*background-color: #333; /* Background color of the menu */
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Space items equally */
+    padding: 10px 0; /* Add padding for better appearance */
+    margin: 0; /* Remove default margin */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.menu li {
+    flex: 1; /* Distribute space equally */
+    text-align: center; /* Center the text */
+}
+
+.menu li a {
+    display: block; /* Make the link fill the list item */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Padding for the link */
+    text-decoration: none; /* Remove underline */
+}
+@media (max-width: 768px) { /* VERAENDERBAR <--------------------------------------------------------------------------*/
+    .menu {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .menu li {
+        text-align: left; /* Align text to the left */
+    }
+
+    .menu li a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+/* nav ul, footer ul {
+    padding: 5px 0px 5px 30px;
+}
+nav li, footer li {
+    display: inline;
+    margin-right: 100px;
+}
+nav li a, footer li a {
+    color: #ffffff;
+}*/
+nav li a:hover, nav li a.current, footer li a:hover, footer li a.current {
+    color: #222222/*#bbbbbb*/
+}
+
+h1 {
+    text-decoration: underline;
+}
+#top {
+    text-decoration: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #0582ba;
+}
+img {
+    padding:10px;
+    /*margin: 0px, 30px 0px, 30px;
+    /* optional */
+    /* max-width: 300%;
+    max-height:300%;
+    min-width: 70%;
+    min-height: 70%; */
+}
+
+
+/* index.html */
+#auftragskunst {
+    text-align: center;
+    padding: 10px;
+    background-color: #0582ba;
+    color: #ffffff;
+}
+#mehr_erfahren {
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* SLIDESHOW */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    width:90%; /* 60% */
+    max-width: 450px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(34,34,34,0.8);
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* END SLIDESHOW */
+
+
+
+
+#picture_preview {
+    padding: 10px; 
+}
+
+
+/* galerie.html */
+.collection {
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+.item {
+    padding: 50px;    
+}
+a.anfrage {
+    padding: 7px 10px;
+    border: 2px outset;
+    border-radius: 5px; /* for rounded outline */
+    border-color: #0582ba;
+    color: #0582ba;
+    background-color: #ffffff;
+    font-weight: 500;
+}
+/* a.bild {
+    cursor: zoom-in;
+} */
+
+/* personal.html */
+.personal .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.personal p {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* auftragskunst.html */
+#mail {
+    text-decoration: underline;
+    font-weight: bold;
+}
