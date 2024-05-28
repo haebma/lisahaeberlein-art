@@ -20,7 +20,45 @@ nav, footer {
     padding: 5px;
     margin-top: 10px;
 }
+<<<<<<< HEAD
 nav ul, footer ul {
+=======
+.menu {
+    list-style-type: none; /* Remove default bullets */
+    /*background-color: #333; /* Background color of the menu */
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Space items equally */
+    padding: 10px 0; /* Add padding for better appearance */
+    margin: 0; /* Remove default margin */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.menu li {
+    flex: 1; /* Distribute space equally */
+    text-align: center; /* Center the text */
+}
+
+.menu li a {
+    display: block; /* Make the link fill the list item */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Padding for the link */
+    text-decoration: none; /* Remove underline */
+}
+@media (max-width: 768px) { /* VERAENDERBAR <--------------------------------------------------------------------------*/
+    .menu {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .menu li {
+        text-align: left; /* Align text to the left */
+    }
+
+    .menu li a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+/* nav ul, footer ul {
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
     padding: 5px 0px 5px 30px;
 }
 nav li, footer li {
@@ -29,7 +67,11 @@ nav li, footer li {
 }
 nav li a, footer li a {
     color: #ffffff;
+<<<<<<< HEAD
 }
+=======
+}*/
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 nav li a:hover, nav li a.current, footer li a:hover, footer li a.current {
     color: #222222/*#bbbbbb*/
 }
@@ -83,7 +125,12 @@ img {
     display: none;
 }
 .mySlides img {
+<<<<<<< HEAD
     width:60%;
+=======
+    width:90%; /* 60% */
+    max-width: 450px;
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 }
 
 /* Fading animation */
@@ -111,7 +158,11 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+<<<<<<< HEAD
     background-color: rgba(0,0,0,0.8);
+=======
+    background-color: rgba(34,34,34,0.8);
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 }
 
 /* Position the "previous button" to the left */
@@ -151,8 +202,11 @@ img {
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 #picture_preview {
     padding: 10px; 
 }
@@ -176,9 +230,15 @@ a.anfrage {
     background-color: #ffffff;
     font-weight: 500;
 }
+<<<<<<< HEAD
 a.bild {
     cursor: zoom-in; /* vlt auch eher nicht */
 }
+=======
+/* a.bild {
+    cursor: zoom-in;
+} */
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 
 /* personal.html */
 .personal .container {
@@ -195,6 +255,7 @@ a.bild {
 #mail {
     text-decoration: underline;
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 
@@ -206,3 +267,6 @@ a.bild {
     
 
 */
+=======
+}
+>>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
