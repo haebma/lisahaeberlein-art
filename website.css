@@ -227,6 +227,9 @@ a.anfrage {
     font-size: 20px;
     padding-left: 20px;
 }
+.personal .container img {
+    width: 30%;
+}
 
 /* auftragskunst.html */
 #mail {
