@@ -1,6 +1,6 @@
 comments.md
 test*
-logs/
+logs*
 .bash_history
 .wget-hsts
 .vscode-server
