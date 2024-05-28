@@ -201,8 +201,8 @@ img {
     padding: 50px;    
 }
 .item img {
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
 }
 a.anfrage {
     padding: 7px 10px;
