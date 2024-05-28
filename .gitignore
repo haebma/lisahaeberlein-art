@@ -4,3 +4,4 @@ logs*
 .bash_history
 .wget-hsts
 .vscode-server
+.ssh
