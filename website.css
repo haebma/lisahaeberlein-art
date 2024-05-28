@@ -41,6 +41,7 @@ nav, footer {
     padding: 14px 20px; /* Padding for the link */
     text-decoration: none; /* Remove underline */
 }
+/* media query für kleinere Bildschirme */
 @media (max-width: 768px) { /* VERAENDERBAR <--------------------------------------------------------------------------*/
     .menu {
         flex-direction: column; /* Stack items vertically on smaller screens */
@@ -227,9 +228,18 @@ a.anfrage {
     font-size: 20px;
     padding-left: 20px;
 }
-.personal .container img {
-    width: 30%;
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .personal .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .personal p {
+        margin-top: 10px;
+    }
 }
+
 
 /* auftragskunst.html */
 #mail {
