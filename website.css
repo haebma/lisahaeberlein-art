@@ -198,7 +198,7 @@ img {
 }
 
 .item {
-    padding: 50px;    
+    padding: 50px 0px 50px 0px;    
 }
 .item img {
     width: 120%;
