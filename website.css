@@ -20,9 +20,6 @@ nav, footer {
     padding: 5px;
     margin-top: 10px;
 }
-<<<<<<< HEAD
-nav ul, footer ul {
-=======
 .menu {
     list-style-type: none; /* Remove default bullets */
     /*background-color: #333; /* Background color of the menu */
@@ -58,7 +55,6 @@ nav ul, footer ul {
     }
 }
 /* nav ul, footer ul {
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
     padding: 5px 0px 5px 30px;
 }
 nav li, footer li {
@@ -67,11 +63,7 @@ nav li, footer li {
 }
 nav li a, footer li a {
     color: #ffffff;
-<<<<<<< HEAD
-}
-=======
 }*/
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 nav li a:hover, nav li a.current, footer li a:hover, footer li a.current {
     color: #222222/*#bbbbbb*/
 }
@@ -125,12 +117,8 @@ img {
     display: none;
 }
 .mySlides img {
-<<<<<<< HEAD
-    width:60%;
-=======
     width:90%; /* 60% */
     max-width: 450px;
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 }
 
 /* Fading animation */
@@ -158,11 +146,7 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-<<<<<<< HEAD
-    background-color: rgba(0,0,0,0.8);
-=======
     background-color: rgba(34,34,34,0.8);
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 }
 
 /* Position the "previous button" to the left */
@@ -202,11 +186,6 @@ img {
 
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 #picture_preview {
     padding: 10px; 
 }
@@ -230,15 +209,9 @@ a.anfrage {
     background-color: #ffffff;
     font-weight: 500;
 }
-<<<<<<< HEAD
-a.bild {
-    cursor: zoom-in; /* vlt auch eher nicht */
-}
-=======
 /* a.bild {
     cursor: zoom-in;
 } */
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
 
 /* personal.html */
 .personal .container {
@@ -255,18 +228,4 @@ a.bild {
 #mail {
     text-decoration: underline;
     font-weight: bold;
-<<<<<<< HEAD
 }
-
-
-
-/* Todo:
-    - color of <hr /> line
-    - bei fett gedrucktem Dicke (font-weight) noch mehr erhöhen
-    - test how .personal .container works out on a mobile phone
-    
-
-*/
-=======
-}
->>>>>>> 991522b68eea7f03825b5dfa5292039f71d1d3bd
