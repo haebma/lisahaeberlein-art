@@ -243,6 +243,7 @@ a.anfrage {
     .personal .container {
         flex-direction: column;
         align-items: flex-start;
+        text-align: center;
     }
 
     .personal p {
