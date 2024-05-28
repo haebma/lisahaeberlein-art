@@ -11,7 +11,7 @@ body {
     font-weight: 500;
 }
 #logo {
-    width: 10%;
+    width: 15%;
 }
 
 nav, footer {
@@ -230,6 +230,10 @@ a.anfrage {
 }
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 768px) {
+    img {
+        max-width: 90%;
+    }
+    
     .personal .container {
         flex-direction: column;
         align-items: flex-start;
