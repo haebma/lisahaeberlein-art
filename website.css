@@ -259,3 +259,8 @@ a.anfrage {
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* rechtliches */
+.rechtliches {
+    font-family: Playfair Display;
+}
