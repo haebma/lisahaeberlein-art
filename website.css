@@ -239,6 +239,10 @@ a.anfrage {
     font-size: 20px;
     padding-left: 20px;
 }
+.copyright {
+    
+}
+
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 768px) {
     img {
