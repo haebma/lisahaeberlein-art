@@ -267,6 +267,7 @@ a.anfrage {
 /* rechtliches */
 .rechtliches {
     font-family: Playfair Display;
+    color: black;
 }
 .w_formular {
     text-align: left;
