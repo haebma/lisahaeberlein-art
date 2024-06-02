@@ -266,5 +266,11 @@ a.anfrage {
 }
 .w_formular {
     text-align: left;
-    padding: 5% 0 5% 0;
+}
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .w_formular {
+        padding: 5% 0 5% 0;
+    }
+    
 }
