@@ -199,6 +199,10 @@ img {
 
 
 /* galerie.html */
+.galerie {
+    color: black;
+}
+
 .collection {
     text-decoration: underline;
     padding-top: 30px;
