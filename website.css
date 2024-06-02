@@ -266,7 +266,7 @@ a.anfrage {
 
 /* rechtliches */
 .rechtliches {
-    font-family: Playfair Display;
+    /*font-family: Playfair Display;*/
     color: black;
     text-align: left;
 }
