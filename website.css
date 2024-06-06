@@ -224,7 +224,7 @@ a.anfrage {
     background-color: #ffffff;
     font-weight: 500;
 }
-a.anfrage.fruehling {
+a.anfrage.fruehling { /* all links having class anfrage and fruehling */
     border-color: #FF1493;
     color: #FF1493;
 }
