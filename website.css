@@ -224,15 +224,20 @@ a.anfrage {
     background-color: #ffffff;
     font-weight: 500;
 }
-#meeresliebhaber {
+a.anfrage.fruehling {
+    border-color: #FF1493;
+    color: #FF1493;
+}
+.collection#meer {
     color:#0582ba;
 }
-#fruehling {
-    color: palevioletred;
+.collection#fruehling {
+    color:#FF1493;
 }
-/* a.bild {
-    cursor: zoom-in;
-} */
+footer#f_galerie {
+    background-color: #FF1493;
+}
+
 
 /* personal.html */
 .personal .container {
