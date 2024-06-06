@@ -215,7 +215,7 @@ a.anfrage {
     background-color: #ffffff;
     font-weight: 500;
 }
-a.anfrage.fruehling { /* all links having class anfrage and fruehling */
+a.anfrage.fruehling { /* elements who are links AND class anfrage AND fruehling; if space between the classes: means all elements of class 1 who have a child of class 2!*/
     border-color: #FF1493;
     color: #FF1493;
 }
@@ -233,6 +233,7 @@ footer#f_galerie {
 /* personal.html */
 .personal .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -241,6 +242,7 @@ footer#f_galerie {
     font-size: 20px;
     padding-left: 20px;
 }
+
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 768px) {
     img {
@@ -248,19 +250,20 @@ footer#f_galerie {
     }
     
     .personal .container {
-        display: block;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .personal.container.tausch {
-        flex-direction: column-reverse;
     }
 
     .personal p {
         margin-top: 10px;
         padding: 5%;
         font-size: 95%;
+    }
+    /* switch position of text and img on mobile */
+    .tausch .text {
+        order: 2;
+    }
+    .tausch .bild {
+        order: 1;
     }
 }
 
