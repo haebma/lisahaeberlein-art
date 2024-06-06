@@ -1,11 +1,10 @@
-/* general */
+/* ----- general ----- */
 html{
     font-size: 100%;
-} /* what's the use?? */
+}
 
 body {
     text-align: center;
-    background-color: #ffffff;
     color: #0582ba; /*#2A357D*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -13,7 +12,7 @@ body {
 #logo {
     width: 10%;
 }
-/* for smaller screens */
+/* media query for smaller screens (mobile phone); max-width adjustable! */
 @media (max-width: 768px){
     #logo{
         width: 20%;
@@ -26,35 +25,29 @@ nav, footer {
     padding: 5px;
     margin-top: 10px;
 }
-.menu {
+.menu { /* in nav and footer */
     list-style-type: none; /* Remove default bullets */
-    /*background-color: #333; /* Background color of the menu */
-    display: flex; /* Use Flexbox */
+    display: flex; /* display in row */
     justify-content: space-around; /* Space items equally */
-    padding: 10px 0; /* Add padding for better appearance */
+    padding: 10px 0;
     margin: 0; /* Remove default margin */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .menu li {
-    flex: 1; /* Distribute space equally */
-    text-align: center; /* Center the text */
+    flex: 1; /* Distribute space between elements equally */
 }
 
 .menu li a {
     display: block; /* Make the link fill the list item */
-    color: white; /* Text color */
-    padding: 14px 20px; /* Padding for the link */
+    color: white;
+    padding: 14px 20px;
     text-decoration: none; /* Remove underline */
 }
-/* media query für kleinere Bildschirme */
-@media (max-width: 768px) { /* VERAENDERBAR <------------------------------*/
+
+@media (max-width: 768px) {
     .menu {
         flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .menu li {
-        text-align: center; /* Align text to the left */
     }
 
     .menu li a {
@@ -63,16 +56,12 @@ nav, footer {
 }
 
 nav li a:hover, nav li a.current, footer li a:hover, footer li a.current {
-    color: #222222/*#bbbbbb*/
+    color: #222222
 }
 
 h1 {
     text-decoration: underline;
 }
-#top {
-    text-decoration: none;
-}
-
 
 a {
     text-decoration: none;
@@ -80,18 +69,11 @@ a {
 }
 img {
     padding:10px;
-    /*margin: 0px, 30px 0px, 30px;
-    /* optional */
-    /* max-width: 300%;
-    max-height:300%;
-    min-width: 70%;
-    min-height: 70%; */
 }
 
 
-/* index.html */
+/* ----- index.html ----- */
 #auftragskunst {
-    text-align: center;
     padding: 10px;
     background-color: #0582ba;
     color: #ffffff;
@@ -115,8 +97,8 @@ img {
     display: none;
 }
 .mySlides img {
-    width:90%; /* 60% */
-    max-width: 450px;
+    width:90%;
+    max-width: 450px; /* for PC */
 }
 
 /* Fading animation */
@@ -182,14 +164,12 @@ img {
 /* END SLIDESHOW */
 
 
-
-
 #picture_preview {
     padding: 10px; 
 }
 
 
-/* galerie.html */
+/* ----- galerie.html ----- */
 .galerie {
     color: black;
 }
@@ -198,49 +178,52 @@ img {
     text-decoration: underline;
     padding-top: 30px;
 }
-
-.item {
-    padding: 50px 0px 50px 0px;    
-}
-.item img {
-    width: 90%;
-    max-width: 450px;
-}
-a.anfrage {
-    padding: 7px 10px;
-    border: 2px outset;
-    border-radius: 5px; /* for rounded outline */
-    border-color: #0582ba;
-    color: #0582ba;
-    background-color: #ffffff;
-    font-weight: 500;
-}
-a.anfrage.fruehling { /* elements who are links AND class anfrage AND fruehling; if space between the classes: means all elements of class 1 who have a child of class 2!*/
-    border-color: #FF1493;
-    color: #FF1493;
-}
 .collection#meer {
     color:#0582ba;
 }
 .collection#fruehling {
     color:#FF1493;
 }
-footer#f_galerie {
+
+.item {
+    padding: 50px 0px;    
+}
+.item img {
+    width: 90%;
+    max-width: 450px; /* for PC */
+}
+a.anfrage {
+    padding: 7px 10px;
+    border: 2px outset;
+    border-radius: 5px; /* for rounded outline */
+    color: black;
+    border-color: black;
+    font-weight: 500;
+}
+a.anfrage.meer {
+    color: #0582ba;
+    border-color: #0582ba;
+}
+a.anfrage.fruehling { /* elements who are links AND class anfrage AND fruehling; if space between the classes: means all elements of class 1 who have a child of class 2!*/
+    color: #FF1493;
+    border-color: #FF1493;
+}
+
+footer#f_galerie { /* dye dynamically to color of last collection */
     background-color: #FF1493;
 }
 
 
-/* personal.html */
+/* ----- personal.html ----- */
 .personal .container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .personal p {
     color: black;
-    font-size: 20px;
-    padding-left: 20px;
+    font-size: 120%;
+    padding: 2%;
 }
 
 /* Media Query für kleinere Bildschirme */
@@ -268,7 +251,7 @@ footer#f_galerie {
 }
 
 
-/* auftragskunst.html */
+/* ----- auftragskunst.html ----- */
 #mail {
     text-decoration: underline;
     font-weight: bold;
@@ -277,19 +260,16 @@ footer#f_galerie {
     color: black;
 }
 
-/* rechtliches */
+
+/* ----- rechtliches ----- */
 .rechtliches {
-    /*font-family: Playfair Display;*/
     color: black;
     text-align: left;
 }
-.w_formular {
-    text-align: left;
-}
+
 /* Media Query für kleinere Bildschirme */
 @media (max-width: 768px) {
     .w_formular {
-        padding: 5% 0 5% 0;
+        padding: 5% 0;
     }
-    
 }
