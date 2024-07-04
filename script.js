@@ -3,7 +3,7 @@ var manually = 0;
 showSlides();
 
 // Function to show the slides
-function showSlides(c) {
+function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
