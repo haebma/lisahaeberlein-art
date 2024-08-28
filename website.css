@@ -102,6 +102,29 @@ img {
     width: 150%;
     max-width: 450px; /* for PC */
 }
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .rezensionen img {
+        max-width: 90%;
+    }
+    
+    .rezensionen .container {
+        flex-direction: column;
+    }
+
+    .rezensionen p {
+        margin-top: 10px;
+        padding: 5%;
+        font-size: 95%;
+    }
+    /* switch position of text and img on mobile */
+    .rezensionen .tausch .text {
+        order: 2;
+    }
+    .rezensionen .tausch .bild {
+        order: 1;
+    }
+}
 
 /* SLIDESHOW */
 /* Slideshow container */
