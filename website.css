@@ -69,6 +69,8 @@ a {
 }
 img {
     padding:10px;
+    width: 90%;
+    max-width: 450px; /* for PC */
 }
 
 
@@ -99,15 +101,13 @@ img {
     padding: 0% 2%;
 }
 .rezensionen img { /* images should have dimensions 600(w)x700(h)*/
-    width: 150%;
-    max-width: 450px; /* for PC */
+    width: 130%;
 }
 /* Media Query für kleinere Bildschirme */
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
     .rezensionen img {
         max-width: 90%;
     }
-    
     .rezensionen .container {
         flex-direction: column;
     }
@@ -137,10 +137,6 @@ img {
 /* Hide the images by default */
 .mySlides {
     display: none;
-}
-.mySlides img {
-    width:90%;
-    max-width: 450px; /* for PC */
 }
 
 /* Fading animation */
@@ -230,10 +226,7 @@ img {
 .item {
     padding: 50px 0px;    
 }
-.item img {
-    width: 90%;
-    max-width: 450px; /* for PC */
-}
+
 a.anfrage {
     padding: 7px 10px;
     border: 2px outset;
@@ -267,13 +260,13 @@ footer#f_galerie { /* dye dynamically to color of last collection */
     font-size: 120%;
     padding: 2%;
 }
+.personal img {
+    width: 300%;
+    max-width: 400px;
+}
 
 /* Media Query für kleinere Bildschirme */
-@media (max-width: 768px) {
-    img {
-        max-width: 90%;
-    }
-    
+@media (max-width: 768px) {    
     .personal .container {
         flex-direction: column;
     }
