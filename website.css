@@ -255,7 +255,7 @@ footer#f_galerie { /* dye dynamically to color of last collection */
     align-items: center;
     justify-content: center;
 }
-.personal p {
+.personal .container p {
     color: black;
     font-size: 120%;
     padding: 2%;
