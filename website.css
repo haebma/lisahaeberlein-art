@@ -1,3 +1,8 @@
+/* I have decided to use one single stylesheet for all pages, because the design is very similar on all pages.
+    I chose to rather override generic rules for specific pages than to have multiple stylesheets with many
+    lines of duplicate code. This makes the stylesheet look a little more complex, but changes are easier
+    to make for they have only to be updated in one/very few lines. */
+
 /* ----- general ----- */
 html{
     font-size: 100%;
@@ -5,7 +10,7 @@ html{
 
 body {
     text-align: center;
-    color: #0582ba; /*#2A357D*/
+    color: #0582ba;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
