@@ -1,6 +1,6 @@
 # lisahaeberlein-art
 
-Welcome to the lisahaeberlein-art project! This repository contains the source code for a personalized website for the artist Lisa Häberlein that I created from scratch.
+Welcome to the lisahaeberlein-art project! This repository contains the source code for a personalized website for the artist Lisa Häberlein, that I created from scratch.
 
 ## Features
 
