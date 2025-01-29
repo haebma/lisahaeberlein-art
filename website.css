@@ -13,6 +13,7 @@ body {
     color: #0582ba;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin: 0;
 }
 #logo {
     width: 10%;
@@ -29,6 +30,12 @@ nav, footer {
     color: #ffffff;
     padding: 5px;
     margin-top: 10px;
+}
+footer {
+    margin-top: 0;
+}
+footer hr {
+    color: white;
 }
 .menu { /* in nav and footer */
     list-style-type: none; /* Remove default bullets */
@@ -76,6 +83,15 @@ img {
     padding:10px;
     width: 90%;
     max-width: 450px; /* for PC */
+}
+
+img.social-icon {
+    width: 1.7em;
+    height: 1.7em;
+    padding: 3%;
+}
+img.social-icon:hover {
+    transform: scale(1.1);
 }
 
 
