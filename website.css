@@ -146,6 +146,9 @@ img.social-icon:hover {
         order: 1;
     }
 }
+.kontakt a {
+    font-weight: 900;
+}
 
 /* SLIDESHOW */
 /* Slideshow container */
