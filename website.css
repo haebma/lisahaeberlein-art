@@ -235,6 +235,9 @@ img.social-icon:hover {
 .galerie {
     color: black;
 }
+.galerie p {
+    margin: 3%;
+}
 
 .collection {
     text-decoration: underline;
