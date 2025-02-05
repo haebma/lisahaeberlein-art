@@ -50,7 +50,7 @@ function handleTouchMove(event) {
     let endX = event.touches[0].clientX;
     let diffX = startX - endX;
 
-    if (Math.abs(diffX) > 50){ // Swipe threshold
+    if (Math.abs(diffX) > 20){ // Swipe threshold
         if (diffX > 0){
             plusSlides(1);
         } else {
