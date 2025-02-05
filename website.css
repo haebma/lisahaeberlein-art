@@ -118,6 +118,11 @@ img.social-icon:hover {
 #portfolio img {
     max-width: 40vw; /* vw = x% of screen-width */
 }
+@media (max-width: 768px) {
+    #portfolio h4 {
+        font-size: 80%;
+    }
+}
 
 
 #auftragskunst {
@@ -132,7 +137,7 @@ img.social-icon:hover {
 }
 
 .rezensionen {
-    background-color: #d1eefc;
+    background-color: #e8f6fd;
     padding: 2%;
 }
 .rezensionen .container {
