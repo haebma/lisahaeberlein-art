@@ -1,11 +1,10 @@
 let slideIndex = 0;
-var manually = 0;
+var manually = 0; // 0 = autoSlide, 1 = manualSlide
+var autoSlideTimeout;
 showSlides();
 
 // Diashow function
 function showSlides() {
-    if(manually) return;
-
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -20,11 +19,14 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 
-    setTimeout(showSlides, 4500); // call showSlides again after 4500ms
+    if(!manually){
+        autoSlideTimeout = setTimeout(showSlides, 4500); // call showSlides again after 4500ms
+    }
 }
 
 // Next/previous controls
 function plusSlides(n) {
+    clearTimeout(autoSlideTimeout);
     manually = 1;
     slideIndex += n - 1; // Adjust slideIndex to the correct position
     if (slideIndex < 0) slideIndex = 0;
@@ -33,6 +35,7 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
+    clearTimeout(autoSlideTimeout);
     manually = 1;
     slideIndex = n - 1; // Set slideIndex to the correct position
     showSlides();
