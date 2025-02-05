@@ -36,3 +36,30 @@ function currentSlide(n) {
     manually = 1;
     showSlides();
 }
+
+// Touch event listeners for swipe functionality
+let startX;
+
+function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    if (!startX) return;
+
+    let endX = event.touches[0].clientX;
+    let diffX = startX - endX;
+
+    if (Math.abs(diffX) > 50){ // Swipe threshold
+        if (diffX > 0){
+            plusSlides(1);
+        } else {
+            plusSlides(-1);
+        }
+    }
+    startX = null; // reset after each swipe
+}
+
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchmove', handleTouchMove);
+
