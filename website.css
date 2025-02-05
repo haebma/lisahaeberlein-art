@@ -111,11 +111,20 @@ img.social-icon:hover {
 #portfolio .serien {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
 #portfolio .serien .serie {
     padding: 2%;
 }
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {  
+    #portfolio img {
+        width: 60%;
+    }
+    #portfolio .serien {
+        flex-direction: column;
+    }
+}
+
 
 #auftragskunst {
     padding: 10px;
