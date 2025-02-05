@@ -56,8 +56,8 @@ function handleTouchMove(event) {
         } else {
             plusSlides(-1);
         }
+        startX = null; // reset after each swipe
     }
-    startX = null; // reset after each swipe
 }
 
 document.addEventListener('touchstart', handleTouchStart);
